@@ -7,6 +7,13 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="boostrap.css">
     <script src="jquery.js"></script>
+          <script>
+    function getURLParameter(name) {
+        return decodeURI(
+            (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1] || ''
+        );
+    }
+    </script>
     <script>
         function GetURLParameter(sParam)
         {
@@ -27,7 +34,7 @@
 
                 e.preventDefault();
                 $.ajax({
-                    url: 'http://fb.xzert.site/postback?cid='+tech,
+                    url: 'https://' + getURLParameter('trackingdomain') + '/postback?cid='+tech,
                     type: 'POST',
 
                 })
