@@ -8,6 +8,7 @@ var langs = {
         textThank: 'Thank you!',
         textThankAfter: 'You can see the list of pets who are in your area and their pictures.',
         textBtnk: 'Find my Pet!'
+    }    
 };
 
 
