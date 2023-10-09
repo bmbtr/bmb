@@ -28,9 +28,13 @@
         </div>
         <div class="row">
             <script>
-                document.write('<a class="btn btn-lg btn-success" href="https://' + getURLParameter('trackingdomain') + '/click?bemobdata=' + getURLParameter('bemobdata') + '" role="button">Click Here</a>')
+                document.write('<a class="btn btn-lg btn-success" href="https://' + getURLParameter('trackingdomain') + '/click?button=button1&bemobdata=' + getURLParameter('bemobdata') + '" role="button">Click Here1</a>')
+            </script>
+             <script>
+                document.write('<a class="btn btn-lg btn-success" href="https://' + getURLParameter('trackingdomain') + '/click?button=button2&bemobdata=' + getURLParameter('bemobdata') + '" role="button">Click Here2</a>')
             </script>
         </div>
+        
     </div>
 </body>
 </html>
